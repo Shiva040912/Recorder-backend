@@ -23,7 +23,12 @@ if (!process.env.GEMINI_API_KEY) {
 }
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://recorder-frontend-nine.vercel.app",
+  })
+);
+
 app.use(express.json());
 
 // MongoDB connection
@@ -74,6 +79,6 @@ app.use((error, req, res, next) => {
 // Start server
 app.listen(PORT, () => {
   console.log(
-    `Server running on http://localhost:${PORT}`
+    `Server running on port ${PORT}`
   );
 });
