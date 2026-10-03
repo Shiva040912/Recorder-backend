@@ -1,4 +1,4 @@
-const WorkLog = require("../models/WorkLog");
+const WorkLog = require("../models/Worklog");
 
 const STATUSES = [
   "Pending",

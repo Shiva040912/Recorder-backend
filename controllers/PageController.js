@@ -1,6 +1,6 @@
 const Page = require("../models/Page");
 const Project = require("../models/Project");
-const WorkLog = require("../models/WorkLog");
+const WorkLog = require("../models/Worklog");
 
 // Get all pages
 const getAllPages = async (req, res) => {

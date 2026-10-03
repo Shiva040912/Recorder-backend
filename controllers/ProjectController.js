@@ -1,5 +1,5 @@
 const Project = require("../models/Project");
-const WorkLog = require("../models/WorkLog");
+const WorkLog = require("../models/Worklog");
 
 // Get all projects
 const getAllProjects = async (req, res) => {
